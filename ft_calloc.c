@@ -6,12 +6,13 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 11:00:30 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/01/26 17:27:10 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/05/26 11:54:38 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+#include <stdint.h>
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -21,7 +22,7 @@ void	*ft_calloc(size_t count, size_t size)
 	if (count == SIZE_MAX || size == SIZE_MAX)
 		return (0);
 	pointer = malloc(count * size);
-	if (pointer == '\0')
+	if (!pointer)
 		return (NULL);
 	i = 0;
 	while (i < count * size)

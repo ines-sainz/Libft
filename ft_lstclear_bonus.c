@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 18:30:01 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/02/03 11:32:33 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/05/26 11:58:52 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del) (void *))
 {
 	t_list	*temp;
 
-	if (lst == '\0' || *lst == '\0')
+	if (!lst || !*lst)
 		return ;
 	while (*lst != NULL)
 	{

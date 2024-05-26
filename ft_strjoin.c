@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 18:07:59 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/01/30 17:28:08 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/05/26 11:55:36 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		resultado = ft_calloc(1, sizeof(char));
 	else
 		resultado = ft_calloc(ft_strlen(s1) + ft_strlen(s2) + 1, 1);
-	if (resultado == '\0')
+	if (!resultado)
 		return (NULL);
 	while (i < ft_strlen(s1) && s1[0] != '\0')
 		resultado[j++] = s1[i++];

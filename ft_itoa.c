@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 18:02:31 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/01/30 21:31:13 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/05/26 11:56:08 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ char	*ft_itoa(int n)
 	nb = (long)n;
 	n_number = ft_count_numbers(nb);
 	number = ft_calloc(n_number, sizeof(char));
-	if (number == '\0')
+	if (!number)
 		return (NULL);
 	if (ft_negative(nb) == 0)
 	{

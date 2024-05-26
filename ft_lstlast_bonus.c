@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 00:35:37 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/02/03 10:26:23 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/05/26 11:57:43 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	if (lst == '\0')
+	if (!lst)
 		return (0);
 	while (lst->next != NULL)
 		lst = lst->next;

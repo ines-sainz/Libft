@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 09:28:46 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/02/03 10:30:56 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/05/26 11:58:13 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	t_list	*temp;
 
 	temp = *lst;
-	if (lst == '\0')
+	if (!lst)
 		return ;
 	if (*lst == NULL)
 	{

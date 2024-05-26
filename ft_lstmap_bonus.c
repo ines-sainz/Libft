@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 09:48:17 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/02/03 11:43:41 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/05/26 11:59:22 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*temp;
 
 	head = NULL;
-	if (lst == '\0' || f == '\0')
+	if (!lst || !f)
 		return (NULL);
 	while (lst != NULL)
 	{

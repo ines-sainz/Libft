@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 11:01:51 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/01/17 15:08:34 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/05/26 11:55:05 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strdup(const char *s1)
 	i = 0;
 	len = ft_strlen(s1);
 	new_string = malloc(len + 1);
-	if (new_string == '\0')
+	if (!new_string)
 		return (NULL);
 	new_string[len] = 0;
 	while (i < len)

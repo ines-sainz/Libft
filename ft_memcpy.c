@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 15:04:09 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/01/17 10:36:52 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/05/26 11:53:55 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (dst == '\0' && src == '\0')
+	if (!dst && !src)
 		return (0);
 	while (i < n)
 	{

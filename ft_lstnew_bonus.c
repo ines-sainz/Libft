@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/30 18:57:27 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/02/03 10:55:31 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/05/26 11:57:17 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_list	*ft_lstnew(void *content)
 	t_list	*element;
 
 	element = (t_list *)malloc(sizeof(t_list));
-	if (element == '\0')
+	if (!element)
 		return (0);
 	element->content = (void *)content;
 	element->next = NULL;
