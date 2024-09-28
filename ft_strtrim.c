@@ -16,11 +16,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		i;
 	int		start;
-	int		finish;
 	char	*new_string;
 
 	i = 0;
-	finish = 0;
 	while (ft_strchr(set, s1[i]) != 0 && s1[i] != '\0')
 		i++;
 	start = i;
