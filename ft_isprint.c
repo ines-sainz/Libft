@@ -10,10 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
 #include "libft.h"
 
+/**
+ * @brief Checks if the character is printable, including space.
+ *
+ * @param c The character to check.
+ * @return 1 if c is printable (ASCII 32 to 126), 0 otherwise.
+ */
 int	ft_isprint(int c)
 {
 	if ((c >= 32 && c <= 126))
