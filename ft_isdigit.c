@@ -10,10 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
 #include "libft.h"
 
+/**
+ * @brief Checks if the character is a digit (0 to 9).
+ *
+ * @param c The character to check.
+ * @return 1 if c is a digit, 0 otherwise.
+ */
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
