@@ -10,10 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
 #include "libft.h"
 
+/**
+ * @brief Checks if the character is alphanumeric (letter or digit).
+ *
+ * @param c The character to check.
+ * @return 1 if c is a letter (a-z, A-Z) or digit (0-9), 0 otherwise.
+ */
 int	ft_isalnum(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
