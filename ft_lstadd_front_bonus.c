@@ -11,21 +11,27 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-/*typedef struct s_list
-{
-    void *content;
-    struct s_list *next;
-} t_list;*/
-
+/**
+ * @brief Adds the node 'new' at the beginning of the list.
+ *
+ * @param lst A pointer to the first element of the list.
+ * @param new The node to be added to the front of the list.
+ */
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	new->next = lst[0];
 	lst[0] = new;
 }
 
-/*int main()
+/*
+/*typedef struct s_list
+{
+    void *content;
+    struct s_list *next;
+} t_list;
+
+int main()
 {
 	t_list *element1 = malloc(sizeof(t_list));
     t_list *element2 = malloc(sizeof(t_list));
