@@ -11,35 +11,40 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
+/**
+ * @brief Converts a string to an integer.
+ *
+ * Parses the input string, skipping any leading whitespace characters.
+ * Handles an optional '+' or '-' sign to determine the sign of the result.
+ * Converts digit characters into an integer value until a non-digit is found.
+ *
+ * @param str The null-terminated string to convert.
+ * @return The converted integer value.
+ */
 int	ft_atoi(const char *str)
 {
-	int	nb;
+	int	number;
 	int	i;
-	int	s;
+	int	sign;
 
-	nb = 0;
+	number = 0;
 	i = 0;
-	s = 0;
+	sign = 1;
 	while (str[i] == ' ' || (str[i] <= 13 && str[i] >= 9))
 		i++;
 	if (str[i] == '+' || str[i] == '-')
 	{
-		if (str[i + 1] == '+' || str[i + 1] == '-')
-			return (0);
 		if (str[i] == '-')
-			s++;
+			sign = -1;
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		nb = nb * 10 + (str[i] - '0');
+		number = number * 10 + (str[i] - '0');
 		i++;
 	}
-	if (s % 2 == 1)
-		nb = -nb;
-	return (nb);
+	return (number * sign);
 }
 
 /*int	main(void)
