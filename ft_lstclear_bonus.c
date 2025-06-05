@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+/**
+ * @brief Deletes and frees the given list and its contents using the given
+ *        delete function, then sets the list pointer to NULL.
+ *
+ * @param lst A pointer to the pointer of the first node of the list.
+ * @param del A function to delete the content of each node.
+ */
 void	ft_lstclear(t_list **lst, void (*del) (void *))
 {
 	t_list	*temp;
