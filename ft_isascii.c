@@ -10,10 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
 #include "libft.h"
 
+/**
+ * @brief Checks if the character is an ASCII character (0 to 127).
+ *
+ * @param c The character to check.
+ * @return 1 if c is an ASCII character, 0 otherwise.
+ */
 int	ft_isascii(int c)
 {
 	if ((c >= 0 && c <= 127))
