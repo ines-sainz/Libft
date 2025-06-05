@@ -10,16 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
-/*typedef struct s_list
-{
-    void *content;
-    struct s_list *next;
-} t_list;*/
-
+/**
+ * @brief Allocates and returns a new node. The member 'content' is set to  
+ *        the value of the parameter 'content', and 'next' is initialized  
+ *        to NULL.
+ *
+ * @param content The content to create the node with.
+ * @return The new node, or NULL if the allocation fails.
+ */
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*element;
@@ -32,7 +32,13 @@ t_list	*ft_lstnew(void *content)
 	return (element);
 }
 
-/*int main()
+/*
+/*typedef struct s_list
+{
+    void *content;
+    struct s_list *next;
+} t_list;
+int main()
 {
     int *data = (int *)malloc(sizeof(int));
     *data = 42;
