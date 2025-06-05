@@ -10,10 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
 #include "libft.h"
 
+/**
+ * @brief Checks if the character is an alphabetic letter.
+ *
+ * @param c The character to check.
+ * @return 1 if c is a letter (a-z or A-Z), 0 otherwise.
+ */
 int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
