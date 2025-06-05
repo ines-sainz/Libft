@@ -10,9 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
+/**
+ * @brief Sets the first n bytes of the memory area pointed to by s to zero.
+ *
+ * @param s Pointer to the memory area to be zeroed.
+ * @param n Number of bytes to set to zero.
+ */
 void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
@@ -32,9 +37,9 @@ int	main(void)
 	char	ptr[5];
 	char	pt[5];
 
-//	printf("El resultado del bzero es: %s\n", bzero(ptr, 4));
+//	printf("Bzero result: %s\n", bzero(ptr, 4));
 //	ft_bzero(pt, 4);
-//	printf("MI ft_bzero me da: %s\n", pt);
+//	printf("My ft_bzero: %s\n", pt);
 //	bzero(pt, 4);
 
 //	int	i; &i;
