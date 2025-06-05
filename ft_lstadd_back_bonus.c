@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/**
+ * @brief Adds the node 'new' at the end of the list.
+ *
+ * @param lst A pointer to the first element of the list.
+ * @param new The node to be added to the end of the list.
+ */
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*temp;
@@ -29,26 +35,12 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	temp->next = new;
 }
 
-/*	
-	while (lst != NULL)
-		lst = lst->next;
-	lst->next = new;
-}
+/*
 typedef struct s_list
 {
 	void	*content;
 	struct	s_list *next;
 } t_list;
-void	ft_lstadd_back(t_list **lst, t_list *new)
-{
-	int	i;
-
-	i = 0;
-	while (lst[i] != NULL)
-		i++;
-	new->next = lst[i];
-	lst[i] = new;
-}
 int	main(void)
 {
 	t_list	*element1 = malloc(sizeof(t_list));
