@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+/**
+ * @brief Iterates over the list and applies the function 'f' to the content
+ *        of each node.
+ *
+ * @param lst The first node of the list.
+ * @param f The function to apply to each node's content.
+ */
 void	ft_lstiter(t_list *lst, void (*f) (void *))
 {
 	void	*temp;
