@@ -11,8 +11,16 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
+/**
+ * @brief Locates the first occurrence of c (converted to an unsigned char)  
+ *        in the first n bytes of the memory area pointed to by s.
+ *
+ * @param s The memory area to be searched.
+ * @param c The byte to search for.
+ * @param n The number of bytes to examine.
+ * @return A pointer to the matching byte, or NULL if not found within n bytes.
+ */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;
