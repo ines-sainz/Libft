@@ -11,8 +11,20 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
+/**
+ * @brief Create a substring from a given string.
+ *
+ * Allocates and returns a new string which is a substring of 's',
+ * starting at index 'start' and of maximum length 'len'.
+ * If 'start' is beyond the length of 's' or 'len' is 0, returns
+ * an empty string. Memory must be freed by the caller.
+ *
+ * @param s The original string.
+ * @param start The start index for the substring.
+ * @param len The maximum length of the substring.
+ * @return Pointer to the newly allocated substring, or NULL if malloc fails.
+ */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
