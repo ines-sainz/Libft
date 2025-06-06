@@ -11,30 +11,37 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
+/**
+ * @brief Concatenates two strings into a new allocated string.
+ *
+ * Allocates and returns a new string consisting of 's1' followed by 's2'.
+ * Returns NULL if the allocation fails.
+ *
+ * @param s1 The prefix string.
+ * @param s2 The suffix string.
+ * @return A new string containing the concatenation of s1 and s2,
+ *         or NULL on failure.
+ */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*resultado;
 	size_t	i;
 	size_t	j;
+	size_t	len_s1;
+	size_t	len_s2;
 
 	i = 0;
 	j = 0;
-	if (s1[0] == '\0')
-		resultado = ft_calloc(ft_strlen(s2) + 1, 1);
-	else if (s2[0] == '\0')
-		resultado = ft_calloc(ft_strlen(s1) + 1, 1);
-	else if (s1[0] == '\0' && s2[0] == '\0')
-		resultado = ft_calloc(1, sizeof(char));
-	else
-		resultado = ft_calloc(ft_strlen(s1) + ft_strlen(s2) + 1, 1);
+	len_s1 = ft_strlen(s1);
+	len_s2 = ft_strlen(s2);
+	resultado = ft_calloc(len_s1 + len_s2 + 1, 1);
 	if (!resultado)
 		return (NULL);
-	while (i < ft_strlen(s1) && s1[0] != '\0')
+	while (i < len_s1 && s1[0] != '\0')
 		resultado[j++] = s1[i++];
 	i = 0;
-	while (i < ft_strlen(s2) && s2[0] != '\0')
+	while (i < len_s2 && s2[0] != '\0')
 		resultado[j++] = s2[i++];
 	return (resultado);
 }
