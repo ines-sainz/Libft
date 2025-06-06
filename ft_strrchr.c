@@ -11,8 +11,17 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
+/**
+ * @brief Locate the last occurrence of a character in a string.
+ *
+ * Searches the string 's' for the last occurrence of the character 'c'.
+ * The terminating null byte is considered part of the string.
+ *
+ * @param s The string to search in.
+ * @param c The character to locate (converted to char).
+ * @return Pointer to the last occurrence of 'c' in 's', or NULL if not found.
+ */
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
