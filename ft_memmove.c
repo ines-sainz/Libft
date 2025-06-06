@@ -10,10 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
 #include "libft.h"
 
+/**
+ * @brief Copies len bytes from src to dst, handling overlap safely.
+ *
+ * @param dst The destination memory area.
+ * @param src The source memory area.
+ * @param len The number of bytes to copy.
+ * @return A pointer to the destination memory area dst.
+ */
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t		i;
