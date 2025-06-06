@@ -10,9 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
+/**
+ * @brief Fills the first len bytes of the memory area pointed to by b with c.
+ *
+ * @param b Pointer to the memory area to fill.
+ * @param c The byte value to set.
+ * @param len Number of bytes to be set to the value.
+ * @return A pointer to the memory area b.
+ */
 void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t	i;
