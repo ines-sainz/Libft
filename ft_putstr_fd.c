@@ -11,9 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
-#include <fcntl.h>
 
+/**
+ * @brief Writes a string to the given file descriptor.
+ *
+ * Iterates through the string and writes each character individually.
+ *
+ * @param s The string to write.
+ * @param fd The file descriptor to write to.
+ */
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
