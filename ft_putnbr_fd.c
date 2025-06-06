@@ -11,10 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
-#include <fcntl.h>
-#include <limits.h>
 
+/**
+ * @brief Outputs the integer n to the given file descriptor.
+ *
+ * Handles edge case for INT_MIN and writes digits recursively.
+ *
+ * @param n The integer to output.
+ * @param fd The file descriptor on which to write.
+ */
 void	ft_putnbr_fd(int n, int fd)
 {
 	int	n1;
