@@ -12,11 +12,15 @@
 
 #include "libft.h"
 
-/*void    ft_tou(unsigned int i, char *c)
-{
-	c[i] = c[i] -32;
-}*/
-
+/**
+ * @brief Applies a function to each character of a string with its index.
+ *
+ * Iterates over the string 's', applying the function 'f' to each character,  
+ * passing its index and a pointer to the character.
+ *
+ * @param s The string to iterate over.
+ * @param f The function to apply to each character and its index.
+ */
 void	ft_striteri(char *s, void (*f) (unsigned int, char*))
 {
 	unsigned int		i;
@@ -28,7 +32,12 @@ void	ft_striteri(char *s, void (*f) (unsigned int, char*))
 	}
 }
 
-/*int main(void)
+/*
+/*void    ft_tou(unsigned int i, char *c)
+{
+	c[i] = c[i] -32;
+}
+int main(void)
 {
 	char s[20] = "hola_Mundo";
 	ft_striteri(s, ft_tou);
