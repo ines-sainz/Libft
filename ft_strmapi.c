@@ -12,13 +12,17 @@
 
 #include "libft.h"
 
-/*char    ft_tou(unsigned int i, char c)
-{
-	if (c >= 'a' && c <= 'z')
-		c -= 32;
-	return (c);
-}*/
-
+/**
+ * @brief Applies a function to each character of a string to create a new one.
+ *
+ * Allocates and returns a new string resulting from applying the function
+ * 'f' to each character of the input string 's', passing its index as the
+ * first argument to 'f'.
+ *
+ * @param s The input string.
+ * @param f The function to apply to each character.
+ * @return A new string with each character modified by 'f', or NULL on error.
+ */
 char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 {
 	int		len;
@@ -47,7 +51,14 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	return (new_string);
 }
 
-/*int main(void)
+/*
+char    ft_tou(unsigned int i, char c)
+{
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
+	return (c);
+}
+int main(void)
 {
 	printf("%s", ft_strmapi("hola mundo", ft_tou));
 }*/
