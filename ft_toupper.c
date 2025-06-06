@@ -11,8 +11,17 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <ctype.h>
 
+/**
+ * @brief Convert a lowercase letter to uppercase.
+ *
+ * If the input character is a lowercase ASCII letter ('a' to 'z'),
+ * converts it to the corresponding uppercase letter ('A' to 'Z').
+ * Otherwise, returns the character unchanged.
+ *
+ * @param c The character to convert.
+ * @return The uppercase equivalent if lowercase, else the original character.
+ */
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
