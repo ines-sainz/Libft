@@ -11,8 +11,19 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
+/**
+ * @brief Compares two strings up to 'n' characters.
+ *
+ * Compares the first 'n' bytes of the strings 's1' and 's2'. Returns the 
+ * difference between the first differing characters as unsigned char values.
+ *
+ * @param s1 First string to compare.
+ * @param s2 Second string to compare.
+ * @param n Maximum number of characters to compare.
+ * @return An integer less than, equal to, or greater than zero if 's1' is 
+ *         found to be less than, to match, or be greater than 's2'.
+ */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
