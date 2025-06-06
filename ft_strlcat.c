@@ -11,8 +11,19 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
+/**
+ * @brief Appends src to dst, ensuring null-termination and buffer size limit.
+ *
+ * Appends the null-terminated string src to the end of dst. It will append
+ * at most dstsize - strlen(dst) - 1 bytes, null-terminating the result.
+ *
+ * @param dst The destination buffer string.
+ * @param src The source string to append.
+ * @param dstsize The total size of the destination buffer.
+ * @return The total length of the string it tried to create: 
+ *         initial length of dst plus length of src.
+ */
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	len_dst;
