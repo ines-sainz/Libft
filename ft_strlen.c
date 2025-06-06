@@ -10,14 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
+/**
+ * @brief Calculates the length of a null-terminated string.
+ *
+ * Iterates through the string until the null terminator is found
+ * and returns the number of characters.
+ *
+ * @param s The input string.
+ * @return The number of characters in the string (excluding '\0').
+ */
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
 	i = 0;
+	if (!s)
+		return (0);
 	while (s[i])
 		i++;
 	return (i);
