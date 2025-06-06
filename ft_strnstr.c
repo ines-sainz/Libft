@@ -11,8 +11,20 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
+/**
+ * @brief Locates a substring in a string within a limited length.
+ *
+ * Searches for the first occurrence of the substring 'needle' in the string 
+ * 'haystack', where not more than 'len' characters are searched. Characters 
+ * after '\0' are not searched.
+ *
+ * @param haystack The string to be searched.
+ * @param needle The substring to search for.
+ * @param len The maximum number of characters to search.
+ * @return A pointer to the beginning of the located substring, or NULL if 
+ *         the substring is not found within 'len' characters.
+ */
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	len_n;
