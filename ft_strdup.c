@@ -11,8 +11,17 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
+/**
+ * @brief Duplicates a string by allocating memory and copying its content.
+ *
+ * Allocates sufficient memory for a copy of the string 's1', copies it, and  
+ * returns a pointer to the new string.
+ *
+ * @param s1 The string to duplicate.
+ * @return A pointer to the newly allocated copy of 's1',
+ *         or NULL if memory allocation fails.
+ */
 char	*ft_strdup(const char *s1)
 {
 	int		len;
