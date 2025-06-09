@@ -44,10 +44,10 @@ SRCS =	$(CHAR)ft_isalnum.c \
 		$(CHAR)ft_isascii.c \
 		$(CHAR)ft_isdigit.c \
 		$(CHAR)ft_isprint.c \
-		$(CHAR)ft_tolower.c \
-		$(CHAR)ft_toupper.c \
 		$(CONVERT)ft_atoi.c \
 		$(CONVERT)ft_itoa.c \
+		$(CONVERT)ft_tolower.c \
+		$(CONVERT)ft_toupper.c \
 		$(FDS)ft_putchar_fd.c \
 		$(FDS)ft_putendl_fd.c \
 		$(FDS)ft_putnbr_fd.c \
