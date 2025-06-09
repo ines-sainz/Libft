@@ -1,8 +1,8 @@
 # Libft: Library of C functions
 
 ## Summary
-Libft es un proyecto que consiste en programar una librería en C con funciones de propósito general.
-El objetivo es entender cómo funcionan funciones comunes de la libc, cómo implementarlas y cómo utilizarlas, creando una librería propia que será la base para futuros proyectos en C.
+Libft is a project that involves programming a C library with general-purpose functions.
+The goal is to understand how common libc functions work, how to implement them, and how to use them, creating your own library that will serve as the foundation for future C projects.
 
 ## CHARACTERS
 |                                      Function                                         |                        Description                        |
