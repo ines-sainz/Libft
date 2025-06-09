@@ -11,38 +11,79 @@
 # **************************************************************************** #
 
 # Name of the library file to create
-NAME    = libft.a
+NAME	= libft.a
 
 # Compiler to use
-CC      = cc
+CC		= cc
 
 # Compiler flags: 
 # -Wall enables all warnings
 # -Werror turns warnings into errors
 # -Wextra enables extra warnings
-CFLAGS  = -Wall -Werror -Wextra
+CFLAGS	= -Wall -Werror -Wextra
 
 # Archive tool to create static libraries
-AR      = ar
+AR		= ar
 
 # Archive flags:
 # -r inserts/updates files
 # -c creates the archive if it doesn't exist
 # -s creates an index (for faster linking)
-ARFLAGS = -rcs
+ARFLAGS	= -rcs
+
+CHAR		=	characters/
+CONVERT		=	conversions/
+FDS			=	file_descriptors/
+MEM			=	memory/
+STR			=	strings/
+LIST		=	lists/
 
 # List of source files for the mandatory part
-SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
-      ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlcpy.c \
-      ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c \
-      ft_memchr.c ft_memcmp.c ft_strnstr.c ft_atoi.c ft_calloc.c ft_strdup.c \
-      ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c \
-      ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+SRCS =	$(CHAR)ft_isalnum.c \
+		$(CHAR)ft_isalpha.c \
+		$(CHAR)ft_isascii.c \
+		$(CHAR)ft_isdigit.c \
+		$(CHAR)ft_isprint.c \
+		$(CHAR)ft_tolower.c \
+		$(CHAR)ft_toupper.c \
+		$(CONVERT)ft_atoi.c \
+		$(CONVERT)ft_itoa.c \
+		$(FDS)ft_putchar_fd.c \
+		$(FDS)ft_putendl_fd.c \
+		$(FDS)ft_putnbr_fd.c \
+		$(FDS)ft_putstr_fd.c \
+		$(MEM)ft_bzero.c \
+		$(MEM)ft_calloc.c \
+		$(MEM)ft_memchr.c \
+		$(MEM)ft_memcmp.c \
+		$(MEM)ft_memcpy.c \
+		$(MEM)ft_memmove.c \
+		$(MEM)ft_memset.c \
+		$(STR)ft_split.c \
+		$(STR)ft_strchr.c \
+		$(STR)ft_strdup.c \
+		$(STR)ft_striteri.c \
+		$(STR)ft_strjoin.c \
+		$(STR)ft_strlcat.c \
+		$(STR)ft_strlcpy.c \
+		$(STR)ft_strlen.c \
+		$(STR)ft_strmapi.c \
+		$(STR)ft_strncmp.c \
+		$(STR)ft_strnstr.c \
+		$(STR)ft_strrchr.c \
+		$(STR)ft_strtrim.c \
+		$(STR)ft_substr.c
 
 # List of source files for the bonus part (linked list functions)
-SRCSBONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
-            ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c \
-            ft_lstmap_bonus.c
+SRCSBONUS	=	$(LIST)ft_lstadd_back_bonus.c \
+				$(LIST)ft_lstadd_front_bonus.c \
+				$(LIST)ft_lstclear_bonus.c \
+				$(LIST)ft_lstdelone_bonus.c \
+				$(LIST)ft_lstiter_bonus.c \
+				$(LIST)ft_lstlast_bonus.c \
+				$(LIST)ft_lstmap_bonus.c \
+				$(LIST)ft_lstnew_bonus.c \
+				$(LIST)ft_lstsize_bonus.c
 
 # Corresponding object files for the bonus source files
 OBJSBONUS = $(SRCSBONUS:.c=.o)
